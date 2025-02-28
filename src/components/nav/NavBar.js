@@ -7,7 +7,7 @@ function NavBar() {
       <div className="container">
         <div className="row ">
           {/* <!--! logo site --> */}
-          <div className="col ">
+          <div className="col col-lg-2">
             <div className="loge">
               <img
                 style={{height:"48px"}}
@@ -18,17 +18,17 @@ function NavBar() {
             </div>
           </div>
           {/* <!--! this's menu site --> */}
-          <div className="col">
-            <ul className="d-flex navList">
-              <li className="mx-1  p-1">
+          <div className="col ">
+            <ul className="d-flex  navList justify-content-center">
+              <li className=" p-1">
                 <a href="" className="">
                   Home
                 </a>
               </li>
               {/* <!--  style inline icon and Shop subMenu --> */}
 
-              <li className="mx-1 shopClass  p-1 position-relative">
-                Shop
+              <li className="  shopClass  p-1 position-relative">
+                <span className="font-waight">Shop</span>
                 <span style={{marginLeft:" 2.2px"}}>
                   <i className="bi bi-chevron-compact-down"></i>
                 </span>
@@ -119,17 +119,17 @@ function NavBar() {
                   </ul>
                 </div>
               </li>
-              <li className="mx-1  p-1">
+              <li className="  p-1">
                 <a href="" className="">
                   Our Story
                 </a>
               </li>
-              <li className="mx-1  p-1">
+              <li className=" p-1">
                 <a href="" className="">
                   Blog
                 </a>
               </li>
-              <li className="mx-1 bg- p-1">
+              <li className=" p-1 pe-4">
                 <a href="" className="">
                   Cantact Us
                 </a>
@@ -137,7 +137,7 @@ function NavBar() {
             </ul>
           </div>
           {/* <!--! this's icons and button Login --> */}
-          <div className="col ">
+          <div className="col col-lg-2">
             <div className="icnLGIN d-flex align-items-center">
               <button className="btn btn-dark">Login</button>
               <span>
