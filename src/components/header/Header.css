@@ -1,0 +1,46 @@
+.mainImg {
+  height: 570px !important;
+}
+.borderImage {
+  background: red;
+  height: 34px;
+  width: 34px;
+  margin: 3px;
+}
+.bgHeader {
+  background: #f3f3f3;
+}
+.imm {
+  z-index: 2;
+}
+.bor-1 {
+  top: 32px;
+  background: transparent;
+  border-top: 14px solid rgb(255, 255, 255);
+  border-left: 14px solid rgb(255, 255, 255);
+  height: 218px;
+  z-index: 1;
+  width: 154px;
+  left: 147px;
+}
+.bor-2 {
+    top: 32px;
+    background: transparent;
+    border-top: 14px solid rgb(255, 255, 255);
+    border-right: 14px solid rgb(255, 255, 255);
+    height: 359px;
+    z-index: 1;
+    width: 148px;
+    left: 337px;
+}
+.bor-3 {
+    top: 165px;
+    background: transparent;
+    border-left: 14px solid rgb(255, 255, 255);
+    border-right: 14px solid rgb(255, 255, 255);
+    border-bottom: 14px solid rgb(255, 255, 255);
+    height: 359px;
+    z-index: 2;
+    width: 338px;
+    left: 147px;
+}

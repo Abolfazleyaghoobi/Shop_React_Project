@@ -6,9 +6,8 @@ function Home() {
     return ( 
        <>
        <NavBar/>
-       <Container>
         <Header/>
-       </Container>
+      
        </>
 
      );
