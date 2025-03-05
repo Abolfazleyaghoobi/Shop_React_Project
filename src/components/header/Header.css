@@ -14,25 +14,19 @@
 .imm {
   z-index: 2;
 }
+.conImage {
+  width: 418px;
+}
 .bor-1 {
   top: 32px;
   background: transparent;
   border-top: 14px solid rgb(255, 255, 255);
   border-left: 14px solid rgb(255, 255, 255);
+  border-right: 14px solid rgb(255, 255, 255);
   height: 218px;
   z-index: 1;
-  width: 154px;
-  left: 147px;
-}
-.bor-2 {
-  top: 32px;
-  background: transparent;
-  border-top: 14px solid rgb(255, 255, 255);
-  border-right: 14px solid rgb(255, 255, 255);
-  height: 359px;
-  z-index: 1;
-  width: 148px;
-  left: 337px;
+  width: 338px;
+  right: 147px;
 }
 .bor-3 {
   top: 165px;
@@ -43,7 +37,7 @@
   height: 359px;
   z-index: 2;
   width: 338px;
-  left: 147px;
+  right: 147px;
 }
 .intro {
   padding-left: 122px;
@@ -60,7 +54,8 @@
   top: 383px;
   right: 474px;
 }
-.best,.E {
+.best,
+.E {
   color: #ffffff;
   font-size: 11rem;
   font-family: "Anton", sans-serif;
@@ -69,4 +64,23 @@
   width: fit-content !important;
   top: 383px;
   right: -20px;
+}
+
+@media screen and (max-width:1399px) {
+  .bor-1{
+    right:98px;
+  }
+  .bor-3{
+
+    right: 98px;
+  }
+}
+@media screen and (max-width:1199px) {
+  .bor-1{
+    right:56px;
+  }
+  .bor-3{
+
+    right: 56px;
+  }
 }

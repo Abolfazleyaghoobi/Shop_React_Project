@@ -21,21 +21,21 @@ function Header() {
               </div>
             </div>
           </Col>
-          <Col>
-            <div className="imageHeader">
-              <div className="conImage d-flex justify-content-center position-relative">
-                <div className="imm">
+          <Col >
+            <div className="imageHeader " >
+              <div className="conImage m-auto d-flex justify-content-center position-relative">
+                <div className="imm ">
                   <img
                     src={imageHeader}
                     className="img-fluid mainImg "
                     alt=""
                   />
                 </div>
-                <div className="borderImage bor-1 position-absolute"></div>
-                <div className="borderImage bor-2 position-absolute"></div>
-                <div className="borderImage  bor-3 position-absolute"></div>
               
               </div>
+                <div className="borderImage bor-1 position-absolute"></div>
+              
+                <div className="borderImage  bor-3 position-absolute"></div>
             </div>
           </Col>
           <div className="best-container position-absolute"> 
