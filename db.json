@@ -1,5 +1,24 @@
 {
-    "users":[
-       
+    "categories":[
+       {
+        "id":1,
+        "categori":"Casual",
+        "image":"https://uploadkon.ir/uploads/7ee907_25pic-04.png"
+       },
+       {
+        "id":2,
+        "categori":"Western",
+        "image":"https://uploadkon.ir/uploads/30d807_25pic-03.png"
+       },
+       {
+        "id":3,
+        "categori":"Ethnic",
+        "image":"https://uploadkon.ir/uploads/f18507_25pic-01.png"
+       },
+       {
+        "id":4,
+        "categori":"Kids",
+        "image":"https://uploadkon.ir/uploads/d8a707_25pic-02.png"
+       }
     ]
 }
