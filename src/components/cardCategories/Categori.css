@@ -1,4 +1,35 @@
-.cardc{
-background: #f3f3f3;
-width: fit-content;
+.cardc {
+  z-index: 2;
+  right: -5px;
+}
+.color {
+  background: #f3f3f3;
+  width: 222px;
+  height: 300px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+.con-img{
+  right: -24px;
+}
+.model-categori {
+    right: -1px;
+    z-index: -1;
+    color: #d8d8d8;
+    font-size: 3.5rem;
+}
+.by{
+  width: 183px;
+  top: 249px; 
+  right: 23px;
+  background: rgb(255, 255, 255);
+  padding: 6px 12px;
+  border-radius: 9px;
+  z-index: 44;
+  font-size: 19.5px;
+  transition: all .1s linear;
+}
+.by:hover{
+  color: rgb(240, 240, 240);
+  background: rgb(128, 128, 128);
 }
