@@ -12,13 +12,43 @@
        },
        {
         "id":3,
+        "categori":"Kids",
+        "image":"https://uploadkon.ir/uploads/598210_25pic-02.png"
+       },
+       {
+        "id":4,
         "categori":"Ethnic",
         "image":"https://uploadkon.ir/uploads/f18507_25pic-01.png"
        },
        {
-        "id":4,
-        "categori":"Kids",
-        "image":"https://uploadkon.ir/uploads/d8a707_25pic-02.png"
+        "id":5,
+        "categori":"Loungewear",
+        "image":"https://uploadkon.ir/uploads/69a910_25pic-05.png"
+       },
+       {
+        "id":6,
+        "categori":"Formal",
+        "image":"https://uploadkon.ir/uploads/f20910_25pic-06.png"
+       },
+       {
+        "id":7,
+        "categori":"Sporty",
+        "image":"https://uploadkon.ir/uploads/9b6310_25pic-07.png"
+       },
+       {
+        "id":8,
+        "categori":"Preppy",
+        "image":"https://uploadkon.ir/uploads/2c8610_25pic-08.png"
+       },
+       {
+        "id":9,
+        "categori":"Streetwear",
+        "image":"https://uploadkon.ir/uploads/e5fe10_25pic-09.png"
+       },
+       {
+        "id":10,
+        "categori":"Punk",
+        "image":"https://uploadkon.ir/uploads/a18510_25pic-10.png"
        }
     ]
 }

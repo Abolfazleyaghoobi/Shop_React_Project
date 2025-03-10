@@ -10,7 +10,7 @@ function CardCategori({categori,image}) {
           <div className="con-img position-relative">
             <img className="img-fluid" src={image} alt="" />
           </div>
-          <button className="position-absolute by">{categori} Wear</button>
+          <button className="position-absolute by-btn">{categori} Wear</button>
         </div>
 
       </div>

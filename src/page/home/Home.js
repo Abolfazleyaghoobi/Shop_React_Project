@@ -5,7 +5,10 @@ import CardCategori from "../../components/cardCategories/Categori";
 import "./Home.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import "swiper/css";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 function Home() {
   let [categories, setCategories] = useState([]);
   useEffect(() => {
@@ -23,13 +26,23 @@ function Home() {
 
         <section className="  cardC">
           <h2>Shop by Categories</h2>
-          <Row>
+          <Swiper
+            slidesPerView={5}
+            spaceBetween={10}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay]}
+            className="mySwiper"
+            loop={true}
+          >
             {categories.map((e) => (
-              <Col>
+              <SwiperSlide className="swiperSlide">
                 <CardCategori {...e} />
-              </Col>
+              </SwiperSlide>
             ))}
-          </Row>
+          </Swiper>
         </section>
       </Container>
     </>
