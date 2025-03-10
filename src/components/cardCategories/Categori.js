@@ -1,4 +1,4 @@
-import ethnic from "../../assets/img/pic/pic-01.png";
+
 import "./Categori.css";
 function CardCategori({categori,image}) {
   return (

@@ -15,7 +15,7 @@ function Home() {
     axios
       .get("http://localhost:2000/categories")
       .then((e) => setCategories(e.data));
-    console.log(categories);
+   
   }, []);
   return (
     <>
@@ -36,10 +36,22 @@ function Home() {
             modules={[Autoplay]}
             className="mySwiper"
             loop={true}
+            breakpoints={{
+              1400: {
+                slidesPerView: 5,
+              },
+              1200: {
+                slidesPerView: 4,
+              },
+              992: {
+                slidesPerView: 3,
+              }
+             
+            }}
           >
             {categories.map((e) => (
-              <SwiperSlide className="swiperSlide">
-                <CardCategori {...e} />
+              <SwiperSlide key={e.id} className="swiperSlide">
+                <CardCategori  {...e} />
               </SwiperSlide>
             ))}
           </Swiper>
