@@ -1,6 +1,14 @@
 .cardC{
     padding: 85px 0;
 }
-.cardC>h2{
+.cardC h2{
   margin-bottom: 55px;
+}
+.PN-btn button {
+background: #6a6a6a;
+width: 45px;
+padding: 13px;
+margin: 0 6px;
+border-radius: 14px;
+
 }
