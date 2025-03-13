@@ -9,10 +9,9 @@ import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
 // import  icon
-import { GrLinkPrevious } from "react-icons/gr";
-import { GrLinkNext } from "react-icons/gr";
+
+import SwiperBTN from "../../components/swiperBTN/SwiperBTN";
 function Home() {
   let [categories, setCategories] = useState([]);
   useEffect(() => {
@@ -21,19 +20,6 @@ function Home() {
       .then((e) => setCategories(e.data));
   }, []);
   //* prev & next style
-  const slideBTN = (e) => {
-    const icon = e.currentTarget.querySelector("svg");
-    if (icon) {
-      icon.style.color = "#fff";
-    }
-  };
-  const slideBTNMouseLeave = (e) => {
-    e.currentTarget.style.background = "#6a6a6a";
-    const icon = e.currentTarget.querySelector("svg");
-    if (icon) {
-      icon.style.color = "black";
-    }
-  };
 
   return (
     <>
@@ -43,39 +29,19 @@ function Home() {
         {/* cardC=>cardCategori */}
 
         <section className="  cardC">
-          <div className="d-flex justify-content-between align-items-center">
-            <h2>Shop by Categories</h2>
-            {/* p=>prev & N=> Next */}
-            <div className="PN-btn mb-4">
-              {/* prev btn*/}
-              <button
-                value="prev"
-                onMouseEnter={slideBTN}
-                onMouseLeave={slideBTNMouseLeave}
-              >
-                <GrLinkPrevious size={23} />
-              </button>
-              {/* next btn */}
-              <button
-                value="next"
-                onMouseEnter={slideBTN}
-                onMouseLeave={slideBTNMouseLeave}
-              >
-                <GrLinkNext size={23} />
-              </button>
-            </div>
-          </div>
           <Swiper
-            slidesPerView={5}
-            spaceBetween={10}
+            rtl={false}
+
+            loop={true}
+            className="d-flex flex-column-reverse "
             autoplay={{
-              delay: 3000,
+              delay: 2000,
               disableOnInteraction: false,
             }}
             modules={[Autoplay]}
-            className="mySwiper"
-            loop={true}
+            spaceBetween={40}
             breakpoints={{
+            
               1400: {
                 slidesPerView: 5,
               },
@@ -84,12 +50,18 @@ function Home() {
               },
               992: {
                 slidesPerView: 3,
-              },
+              }
+            
             }}
           >
-            {categories.map((e) => (
-              <SwiperSlide key={e.id} className="swiperSlide">
-                <CardCategori {...e} />
+            <div className="d-flex justify-content-between align-items-center">
+              <h2>Shop by Categories</h2>
+              {/* p=>prev & N=> Next */}
+              <SwiperBTN />
+            </div>
+            {categories.map((course) => (
+              <SwiperSlide>
+                <CardCategori {...course} />
               </SwiperSlide>
             ))}
           </Swiper>
