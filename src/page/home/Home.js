@@ -7,11 +7,11 @@ import "./Home.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 import "swiper/css";
 // import  icon
 
 import SwiperBTN from "../../components/swiperBTN/SwiperBTN";
+import Bestseller from "../../components/cardBestseller/Bestseller";
 function Home() {
   let [categories, setCategories] = useState([]);
   useEffect(() => {
@@ -34,11 +34,6 @@ function Home() {
 
             loop={true}
             className="d-flex flex-column-reverse "
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-            }}
-            modules={[Autoplay]}
             spaceBetween={40}
             breakpoints={{
             
@@ -59,13 +54,21 @@ function Home() {
               {/* p=>prev & N=> Next */}
               <SwiperBTN />
             </div>
-            {categories.map((course) => (
-              <SwiperSlide>
-                <CardCategori {...course} />
+            {categories.map((categori) => (
+              <SwiperSlide key={categori.id}>
+                <CardCategori {...categori} />
               </SwiperSlide>
             ))}
           </Swiper>
         </section>
+        {/* this part is bestseller */}
+        <section className="mt-5">
+            <div className="text-center">
+              <h2>Our Bestseller</h2>
+            </div>
+            <Bestseller/>
+        </section>
+
       </Container>
     </>
   );

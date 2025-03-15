@@ -1,54 +1,120 @@
 {
-    "categories":[
-       {
-        "id":1,
-        "categori":"Casual",
-        "image":"https://uploadkon.ir/uploads/7ee907_25pic-04.png"
-       },
-       {
-        "id":2,
-        "categori":"Western",
-        "image":"https://uploadkon.ir/uploads/30d807_25pic-03.png"
-       },
-       {
-        "id":3,
-        "categori":"Kids",
-        "image":"https://uploadkon.ir/uploads/598210_25pic-02.png"
-       },
-       {
-        "id":4,
-        "categori":"Ethnic",
-        "image":"https://uploadkon.ir/uploads/f18507_25pic-01.png"
-       },
-       {
-        "id":5,
-        "categori":"Loungewear",
-        "image":"https://uploadkon.ir/uploads/69a910_25pic-05.png"
-       },
-       {
-        "id":6,
-        "categori":"Formal",
-        "image":"https://uploadkon.ir/uploads/f20910_25pic-06.png"
-       },
-       {
-        "id":7,
-        "categori":"Sporty",
-        "image":"https://uploadkon.ir/uploads/9b6310_25pic-07.png"
-       },
-       {
-        "id":8,
-        "categori":"Preppy",
-        "image":"https://uploadkon.ir/uploads/2c8610_25pic-08.png"
-       },
-       {
-        "id":9,
-        "categori":"Streetwear",
-        "image":"https://uploadkon.ir/uploads/e5fe10_25pic-09.png"
-       },
-       {
-        "id":10,
-        "categori":"Punk",
-        "image":"https://uploadkon.ir/uploads/a18510_25pic-10.png"
-       }
-    ]
+  "categories": [
+    {
+      "id": 1,
+      "categori": "Casual",
+      "image": "https://uploadkon.ir/uploads/7ee907_25pic-04.png"
+    },
+    {
+      "id": 2,
+      "categori": "Western",
+      "image": "https://uploadkon.ir/uploads/30d807_25pic-03.png"
+    },
+    {
+      "id": 3,
+      "categori": "Kids",
+      "image": "https://uploadkon.ir/uploads/598210_25pic-02.png"
+    },
+    {
+      "id": 4,
+      "categori": "Ethnic",
+      "image": "https://uploadkon.ir/uploads/f18507_25pic-01.png"
+    },
+    {
+      "id": 5,
+      "categori": "Loungewear",
+      "image": "https://uploadkon.ir/uploads/69a910_25pic-05.png"
+    },
+    {
+      "id": 6,
+      "categori": "Formal",
+      "image": "https://uploadkon.ir/uploads/f20910_25pic-06.png"
+    },
+    {
+      "id": 7,
+      "categori": "Sporty",
+      "image": "https://uploadkon.ir/uploads/9b6310_25pic-07.png"
+    },
+    {
+      "id": 8,
+      "categori": "Preppy",
+      "image": "https://uploadkon.ir/uploads/2c8610_25pic-08.png"
+    },
+    {
+      "id": 9,
+      "categori": "Streetwear",
+      "image": "https://uploadkon.ir/uploads/e5fe10_25pic-09.png"
+    },
+    {
+      "id": 10,
+      "categori": "Punk",
+      "image": "https://uploadkon.ir/uploads/a18510_25pic-10.png"
+    }
+  ],
+  "Bestseller": [
+    {
+      "id": 1,
+      "imagge": "https://uploadkon.ir/uploads/67f115_25s-l400zzz.png",
+      "name": "Roadstar",
+      "title": "Printed Cotton T-Shirt",
+      "price": 40.0,
+      "off": 38.0
+    },
+    {
+      "id": 2,
+      "image": "https://uploadkon.ir/uploads/44a715_25allen-solly-sling-bag-beige-1647z.png",
+      "name": "Allen Solly",
+      "title": "Women Textured Handheld Bag",
+      "price": 100.0,
+      "off": 80.0
+    },
+    {
+      "id": 3,
+      "image":"https://uploadkon.ir/uploads/bb3615_25Louis-Philippe-Sxxport.png",
+      "name": "Louis Philippe Sport",
+      "title": "Polo Collar T-Shirt",
+      "price": 55.0,
+      "off": 50.0
+    },
+    {
+      "id": 4,
+      "image":"https://uploadkon.ir/uploads/79b215_25main-square-ed2ab4d9-c53e-4vv9eb-b.png",
+      "name": "Adidas",
+      "title": "Men adi-dash Running Shoes",
+      "price": 75.0,
+      "off": 60.0
+    },
+    {
+      "id": 5,
+      "image":"https://uploadkon.ir/uploads/c72415_25abolfazlec.png",
+      "name": "Trendyol",
+      "title": "Floral Embroidered Maxi Dress",
+      "price": 45.0,
+      "off": 35.0
+    },
+    {
+      "id": 6,
+      "image":"https://uploadkon.ir/uploads/310315_25col-cor.png",
+      "name": "YK Disney",
+      "title": "Girls Pink Moana Printed Dress",
+      "price": 100.0,
+      "off": 80.0
+    },
+    {
+      "id": 7,
+      "image":"https://uploadkon.ir/uploads/7b8a15_25Screenshot-2025dd-03-13-231808.png",
+      "name": "US Polo",
+      "title": "Tailored Cotton Casual Shirt",
+      "price": 50.0,
+      "off": 40.0
+    },
+    {
+      "id": 8,
+      "image":"https://uploadkon.ir/uploads/ab7915_25Screenshot-2025-0ff3-13-231826.png",
+      "name": "Zyla",
+      "title": "Women Sandals",
+      "price": 40.0,
+      "off": 35.0
+    }
+  ]
 }
