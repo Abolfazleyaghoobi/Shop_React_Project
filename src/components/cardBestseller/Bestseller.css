@@ -1,0 +1,12 @@
+.cardBest{
+    width: 222px !important;
+    height: 347px !important;
+}
+.imgBest{
+    background: #f8f8f8;
+    
+}
+.offer{
+    text-decoration: line-through;
+    color: #929292;
+}
