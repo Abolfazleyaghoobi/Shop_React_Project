@@ -1,10 +1,15 @@
 .cardBest{
-    width: 222px !important;
+
+    width: 250px !important;
     height: 347px !important;
 }
 .imgBest{
     background: #f8f8f8;
     
+}.imgBest img{
+    width: 250px !important;
+    height: 250px !important;
+
 }
 .offer{
     text-decoration: line-through;

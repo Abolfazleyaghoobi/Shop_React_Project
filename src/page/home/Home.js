@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 import NavBar from "../../components/nav/NavBar";
 import Header from "../../components/header/Header";
@@ -14,10 +14,14 @@ import SwiperBTN from "../../components/swiperBTN/SwiperBTN";
 import Bestseller from "../../components/cardBestseller/Bestseller";
 function Home() {
   let [categories, setCategories] = useState([]);
+  let [bestseller, setBestseller] = useState([]);
   useEffect(() => {
     axios
       .get("http://localhost:2000/categories")
       .then((e) => setCategories(e.data));
+    axios
+      .get("http://localhost:2000/Bestseller")
+      .then((e) => setBestseller(e.data));
   }, []);
   //* prev & next style
 
@@ -66,7 +70,15 @@ function Home() {
             <div className="text-center">
               <h2>Our Bestseller</h2>
             </div>
-            <Bestseller/>
+           <Row>
+           {
+            bestseller.map((best)=>(
+              <Col key={best.id}>
+              <Bestseller {...best}/>
+              </Col>
+            ))
+           }
+           </Row>
         </section>
 
       </Container>
