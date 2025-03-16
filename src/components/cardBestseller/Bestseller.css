@@ -1,17 +1,47 @@
-.cardBest{
-
-    width: 250px !important;
-    height: 347px !important;
+.cardBest {
+  width: 250px !important;
+  height: 347px !important;
 }
-.imgBest{
-    background: #f8f8f8;
-    
-}.imgBest img{
-    width: 250px !important;
-    height: 250px !important;
+.imgBest {
+  background: #f8f8f8;
+}
+.imgBest img {
+  width: 250px !important;
+  height: 250px !important;
+}
+.offer {
+  text-decoration: line-through;
+  color: #929292;
+}
+.addToCard {
+  background: #dcdcdcb5;
+  width: 250px !important;
+  height: 250px !important;
+  visibility: hidden;
+}
+.addToCard span {
+padding-right: 15px;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 25px;
+}
+.addToCard span p {
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 25px;
+cursor: pointer;
+  width: fit-content;
+}
+.addToCard button {
+  background: #ffffff;
+  top: 195px;
+  left: 33px;
+  padding: 11px;
+  width: 183px;
+  border-radius: 9px;
 
 }
-.offer{
-    text-decoration: line-through;
-    color: #929292;
+.addToCard button:hover {
+  background: #949494;
+  color: white;
 }
