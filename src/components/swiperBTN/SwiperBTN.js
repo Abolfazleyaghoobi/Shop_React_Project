@@ -7,11 +7,11 @@ function SwiperBTN() {
   const slideBTN = (e) => {
     const icon = e.currentTarget.querySelector("svg");
     if (icon) {
-      icon.style.color = "#5db7e8";
+      icon.style.color = "#fff";
     }
   };
   const slideBTNMouseLeave = (e) => {
-    e.currentTarget.style.background = "#ffebeb";
+    e.currentTarget.style.background = "#c9c9c9";
     const icon = e.currentTarget.querySelector("svg");
     if (icon) {
       icon.style.color = "black";

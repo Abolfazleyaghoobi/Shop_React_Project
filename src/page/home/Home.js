@@ -9,10 +9,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Bestseller from "../../components/cardBestseller/Bestseller";
 import Deals from "../../components/Deals/Deals";
+import ComentUser from "../../components/comentsInPageHome/cmt";
+import SwiperBTN from "../../components/swiperBTN/SwiperBTN";
+import Btn from "../../components/btn/Btn";
 
 function Home() {
   let [categories, setCategories] = useState([]);
   let [bestseller, setBestseller] = useState([]);
+  let [comentsUsers, setComentsUsers] = useState([]);
   useEffect(() => {
     axios
       .get("http://localhost:2000/categories")
@@ -20,6 +24,9 @@ function Home() {
     axios
       .get("http://localhost:2000/Bestseller")
       .then((e) => setBestseller(e.data));
+    axios
+      .get("http://localhost:2000/coments")
+      .then((e) => setComentsUsers(e.data));
   }, []);
   //* prev & next style
 
@@ -50,7 +57,7 @@ function Home() {
           >
             <div className="d-flex justify-content-between align-items-center">
               <h2>Shop by Categories</h2>
-              
+              <SwiperBTN />
             </div>
             {categories.map((categori) => (
               <SwiperSlide key={categori.id}>
@@ -74,9 +81,25 @@ function Home() {
         </section>
         {/* Deals */}
         <section className="deal">
-          <Deals/>
+          <Deals />
         </section>
       </Container>
+        {/* coments */} 
+        <section className="comentsUsers ">
+         <Container>
+         <div className="d-flex justify-content-between align-items-center">
+            <h2>What our Customer say's?</h2>
+            <Btn/>
+          </div>
+          <Row>
+            {comentsUsers.map((cmt) => (
+              <Col key={cmt.id}>
+                <ComentUser {...cmt} />
+              </Col>
+            ))}
+          </Row>
+         </Container>
+        </section>
     </>
   );
 }

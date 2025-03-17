@@ -120,23 +120,26 @@
   "coments":[
     {
       "id":1,
+      "image":"https://img2.taw-bio.ir/2025/266507/1l58euas.jpeg",
       "name":"Chase Ward",
       "job":"Fashion Designer",
-      "coment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis. Maiores, provident?Vel magni, impedit vero, provident perferendis maxime, unde a quam modi debitis officia illo veritatis explicabo similique dolore esse! Iusto dolorem dicta corporis vel officiis explicabo aspernatur magni fugit"
-
+      "coment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis."
+      
     },
     {
       "id":2,
+      "image":"https://img1.taw-bio.ir/2024/277677/1kt9dftm.jpeg",
       "name":"Chase Ward",
       "job":"model",
-      "coment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis. Maiores, provident?Vel magni, impedit vero, provident perferendis maxime, unde a quam modi debitis officia illo veritatis explicabo similique dolore esse! Iusto dolorem dicta corporis vel officiis explicabo aspernatur magni fugit"
-
+      "coment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis."
+      
     },
     {
       "id":3,
+      "image":"https://img2.taw-bio.ir/2025/258324/1l2sansr.jpeg",
       "name":"Shane Berry",
       "job":"Co-Founder",
-      "coment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis. Maiores, provident?Vel magni, impedit vero, provident perferendis maxime, unde a quam modi debitis officia illo veritatis explicabo similique dolore esse! Iusto dolorem dicta corporis vel officiis explicabo aspernatur magni fugit"
+      "coment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis."
 
     }
 
