@@ -116,5 +116,29 @@
       "price": 40.0,
       "off": 35.0
     }
+  ],
+  "coments":[
+    {
+      "id":1,
+      "name":"Chase Ward",
+      "job":"Fashion Designer",
+      "coment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis. Maiores, provident?Vel magni, impedit vero, provident perferendis maxime, unde a quam modi debitis officia illo veritatis explicabo similique dolore esse! Iusto dolorem dicta corporis vel officiis explicabo aspernatur magni fugit"
+
+    },
+    {
+      "id":2,
+      "name":"Chase Ward",
+      "job":"model",
+      "coment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis. Maiores, provident?Vel magni, impedit vero, provident perferendis maxime, unde a quam modi debitis officia illo veritatis explicabo similique dolore esse! Iusto dolorem dicta corporis vel officiis explicabo aspernatur magni fugit"
+
+    },
+    {
+      "id":3,
+      "name":"Shane Berry",
+      "job":"Co-Founder",
+      "coment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis. Maiores, provident?Vel magni, impedit vero, provident perferendis maxime, unde a quam modi debitis officia illo veritatis explicabo similique dolore esse! Iusto dolorem dicta corporis vel officiis explicabo aspernatur magni fugit"
+
+    }
+
   ]
 }
