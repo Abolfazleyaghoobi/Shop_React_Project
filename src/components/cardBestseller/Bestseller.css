@@ -31,6 +31,12 @@ padding-right: 15px;
   font-size: 25px;
 cursor: pointer;
   width: fit-content;
+  background: white;
+  padding: 1px;
+  text-align: center;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  
 }
 .addToCard button {
   background: #ffffff;

@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import image from "../../assets/img/pic/Louis Philippe Sxxport.png";
 
 import "./Bestseller.css"
 function Bestseller({image,name,title,off,price}) {

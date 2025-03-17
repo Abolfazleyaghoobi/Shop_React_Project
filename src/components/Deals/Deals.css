@@ -1,0 +1,24 @@
+.AllProductsBTN {
+  padding: 12px;
+  background: #000;
+  color: white;
+  border-radius: 10px;
+  margin-top: 55px;
+}
+.image-deals {
+  height: 400px;
+  background: #f3f3f3;
+}
+.image-deals img{
+  height: 600px;
+  z-index: 2;
+}
+.brd{
+  width: 208px;
+  height: 574px;
+  background: #de374b;
+  transform: rotate(35deg);
+  right: -19px;
+  top: -81px;
+  z-index: 1;
+}

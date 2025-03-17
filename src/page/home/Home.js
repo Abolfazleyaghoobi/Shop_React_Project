@@ -1,5 +1,4 @@
 import { Col, Container, Row } from "react-bootstrap";
-
 import NavBar from "../../components/nav/NavBar";
 import Header from "../../components/header/Header";
 import CardCategori from "../../components/cardCategories/Categori";
@@ -8,10 +7,9 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-// import  icon
-
-import SwiperBTN from "../../components/swiperBTN/SwiperBTN";
 import Bestseller from "../../components/cardBestseller/Bestseller";
+import Deals from "../../components/Deals/Deals";
+
 function Home() {
   let [categories, setCategories] = useState([]);
   let [bestseller, setBestseller] = useState([]);
@@ -35,12 +33,10 @@ function Home() {
         <section className="  cardC">
           <Swiper
             rtl={false}
-
             loop={true}
             className="d-flex flex-column-reverse "
             spaceBetween={40}
             breakpoints={{
-            
               1400: {
                 slidesPerView: 5,
               },
@@ -49,14 +45,12 @@ function Home() {
               },
               992: {
                 slidesPerView: 3,
-              }
-            
+              },
             }}
           >
             <div className="d-flex justify-content-between align-items-center">
               <h2>Shop by Categories</h2>
-              {/* p=>prev & N=> Next */}
-              <SwiperBTN />
+              
             </div>
             {categories.map((categori) => (
               <SwiperSlide key={categori.id}>
@@ -67,20 +61,21 @@ function Home() {
         </section>
         {/* this part is bestseller */}
         <section className="mt-5">
-            <div className="text-center">
-              <h2>Our Bestseller</h2>
-            </div>
-           <Row>
-           {
-            bestseller.map((best)=>(
+          <div className="text-center">
+            <h2>Our Bestseller</h2>
+          </div>
+          <Row>
+            {bestseller.map((best) => (
               <Col key={best.id}>
-              <Bestseller {...best}/>
+                <Bestseller {...best} />
               </Col>
-            ))
-           }
-           </Row>
+            ))}
+          </Row>
         </section>
-
+        {/* Deals */}
+        <section className="deal">
+          <Deals/>
+        </section>
       </Container>
     </>
   );
