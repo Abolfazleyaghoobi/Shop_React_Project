@@ -12,11 +12,13 @@ import Deals from "../../components/Deals/Deals";
 import ComentUser from "../../components/comentsInPageHome/cmt";
 import SwiperBTN from "../../components/swiperBTN/SwiperBTN";
 import Btn from "../../components/btn/Btn";
+import Stories from "../../components/stories/Stories";
 
 function Home() {
   let [categories, setCategories] = useState([]);
   let [bestseller, setBestseller] = useState([]);
   let [comentsUsers, setComentsUsers] = useState([]);
+  let [stories, setStories] = useState([]);
   useEffect(() => {
     axios
       .get("http://localhost:2000/categories")
@@ -27,6 +29,9 @@ function Home() {
     axios
       .get("http://localhost:2000/coments")
       .then((e) => setComentsUsers(e.data));
+    axios
+      .get("http://localhost:2000/photoStories")
+      .then((e) => setStories(e.data));
   }, []);
   //* prev & next style
 
@@ -84,12 +89,12 @@ function Home() {
           <Deals />
         </section>
       </Container>
-        {/* coments */} 
-        <section className="comentsUsers ">
-         <Container>
-         <div className="d-flex justify-content-between align-items-center">
+      {/* coments */}
+      <section className="comentsUsers ">
+        <Container>
+          <div className="d-flex justify-content-between align-items-center">
             <h2>What our Customer say's?</h2>
-            <Btn/>
+            <Btn />
           </div>
           <Row>
             {comentsUsers.map((cmt) => (
@@ -98,8 +103,21 @@ function Home() {
               </Col>
             ))}
           </Row>
-         </Container>
+        </Container>
+      </section>
+      {/* stories */}
+      <Container>
+        <section className="stories">
+          <h1 className="text-center">Our Instagram Stories</h1>
+          <Row>
+            {stories.map((stori) => (
+                <Col key={stori.id}>
+                <Stories {...stori} />
+              </Col>
+            ))}
+          </Row>
         </section>
+      </Container>
     </>
   );
 }

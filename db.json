@@ -70,7 +70,7 @@
     },
     {
       "id": 3,
-      "image":"https://uploadkon.ir/uploads/bb3615_25Louis-Philippe-Sxxport.png",
+      "image": "https://uploadkon.ir/uploads/bb3615_25Louis-Philippe-Sxxport.png",
       "name": "Louis Philippe Sport",
       "title": "Polo Collar T-Shirt",
       "price": 55.0,
@@ -78,7 +78,7 @@
     },
     {
       "id": 4,
-      "image":"https://uploadkon.ir/uploads/79b215_25main-square-ed2ab4d9-c53e-4vv9eb-b.png",
+      "image": "https://uploadkon.ir/uploads/79b215_25main-square-ed2ab4d9-c53e-4vv9eb-b.png",
       "name": "Adidas",
       "title": "Men adi-dash Running Shoes",
       "price": 75.0,
@@ -86,7 +86,7 @@
     },
     {
       "id": 5,
-      "image":"https://uploadkon.ir/uploads/c72415_25abolfazlec.png",
+      "image": "https://uploadkon.ir/uploads/c72415_25abolfazlec.png",
       "name": "Trendyol",
       "title": "Floral Embroidered Maxi Dress",
       "price": 45.0,
@@ -94,7 +94,7 @@
     },
     {
       "id": 6,
-      "image":"https://uploadkon.ir/uploads/310315_25col-cor.png",
+      "image": "https://uploadkon.ir/uploads/310315_25col-cor.png",
       "name": "YK Disney",
       "title": "Girls Pink Moana Printed Dress",
       "price": 100.0,
@@ -102,7 +102,7 @@
     },
     {
       "id": 7,
-      "image":"https://uploadkon.ir/uploads/7b8a15_25Screenshot-2025dd-03-13-231808.png",
+      "image": "https://uploadkon.ir/uploads/7b8a15_25Screenshot-2025dd-03-13-231808.png",
       "name": "US Polo",
       "title": "Tailored Cotton Casual Shirt",
       "price": 50.0,
@@ -110,38 +110,52 @@
     },
     {
       "id": 8,
-      "image":"https://uploadkon.ir/uploads/ab7915_25Screenshot-2025-0ff3-13-231826.png",
+      "image": "https://uploadkon.ir/uploads/ab7915_25Screenshot-2025-0ff3-13-231826.png",
       "name": "Zyla",
       "title": "Women Sandals",
       "price": 40.0,
       "off": 35.0
     }
   ],
-  "coments":[
+  "coments": [
     {
-      "id":1,
-      "image":"https://img2.taw-bio.ir/2025/266507/1l58euas.jpeg",
-      "name":"Chase Ward",
-      "job":"Fashion Designer",
-      "coment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis."
-      
+      "id": 1,
+      "image": "https://img2.taw-bio.ir/2025/266507/1l58euas.jpeg",
+      "name": "Chase Ward",
+      "job": "Fashion Designer",
+      "coment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis."
     },
     {
-      "id":2,
-      "image":"https://img1.taw-bio.ir/2024/277677/1kt9dftm.jpeg",
-      "name":"Chase Ward",
-      "job":"model",
-      "coment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis."
-      
+      "id": 2,
+      "image": "https://img1.taw-bio.ir/2024/277677/1kt9dftm.jpeg",
+      "name": "Chase Ward",
+      "job": "model",
+      "coment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis."
     },
     {
-      "id":3,
-      "image":"https://img2.taw-bio.ir/2025/258324/1l2sansr.jpeg",
-      "name":"Shane Berry",
-      "job":"Co-Founder",
-      "coment":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis."
-
+      "id": 3,
+      "image": "https://img2.taw-bio.ir/2025/258324/1l2sansr.jpeg",
+      "name": "Shane Berry",
+      "job": "Co-Founder",
+      "coment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, asperiores rerum sapiente aut omnis quaerat ipsum, doloremque quo illum ducimus quam nostrum molestiae vitae provident velit? Deserunt, nobis."
     }
-
+  ],
+  "photoStories": [
+    {
+      "id": 1,
+      "image": "https://img2.taw-bio.ir/2025/296538/1l1fv1gr.jpeg"
+    },
+    {
+      "id": 2,
+      "image": "https://img1.taw-bio.ir/2024/214537/1kj7jtg9.jpeg"
+    },
+    {
+      "id": 3,
+      "image": "https://img2.taw-bio.ir/2023/16/1j9ajo0j.jpeg"
+    },
+    {
+      "id": 4,
+      "image": "https://img2.taw-bio.ir/2023/16/1japoc6g.jpeg"
+    }
   ]
 }

@@ -1,0 +1,16 @@
+.con-stories {
+    width: 300px ;
+    height: 300px ;
+}
+.iconsInsta{
+    width: 336px ;
+    height: 336px ;
+    background: #85858578;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.iconsInsta svg{
+   cursor: pointer;
+}
