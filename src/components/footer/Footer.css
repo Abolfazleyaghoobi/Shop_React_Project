@@ -1,0 +1,40 @@
+.contactMe p,.Subscribe p {
+  color: #7f7e81;
+}
+
+.information a,.Service a {
+  color: #7f7e81;
+  display: block;
+  padding: 7px 0;
+  width: fit-content;
+}
+.information a:hover , .Service a:hover {
+  color: #e2e2e2;
+}
+
+.information  > *:first-child {
+  color: #c2c2c2;
+  font-weight: bold;
+}
+ .Service > *:first-child {
+  color: #c2c2c2;
+  font-weight: bold;
+}
+ .Subscribe > *:first-child {
+  color: #c2c2c2;
+  font-weight: bold;
+}
+.enterYourEmail{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 9px;
+    color: #e2e2e2;
+    border: 1px solid #e2e2e2 ;
+}
+.portal  span{
+  margin: 0 16px;
+}
+.SocialMedia{
+  border-top: 1px solid #ffffff;
+}
