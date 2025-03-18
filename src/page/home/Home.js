@@ -13,6 +13,10 @@ import ComentUser from "../../components/comentsInPageHome/cmt";
 import SwiperBTN from "../../components/swiperBTN/SwiperBTN";
 import Btn from "../../components/btn/Btn";
 import Stories from "../../components/stories/Stories";
+import { FaBox ,FaDollarSign} from "react-icons/fa6";
+import { MdHeadset } from "react-icons/md";
+import { LuCreditCard } from "react-icons/lu";
+
 
 function Home() {
   let [categories, setCategories] = useState([]);
@@ -111,12 +115,35 @@ function Home() {
           <h1 className="text-center">Our Instagram Stories</h1>
           <Row>
             {stories.map((stori) => (
-                <Col key={stori.id}>
+              <Col key={stori.id}>
                 <Stories {...stori} />
               </Col>
             ))}
           </Row>
         </section>
+        <div className="d-flex justify-content-between con-FeaturesSection">
+          <div className="FeaturesSection p-2">
+            <span><FaBox size={25} /></span>
+            <h4 className="mt-3">Free Shipping</h4>
+            <p>Free shipping for order above $150</p>
+          </div>
+          <div className="FeaturesSection p-2">
+            <span><FaDollarSign  size={25} /></span>
+            <h4 className="mt-3">Money Guarantee</h4>
+            <p>Within 30 days for an exchange</p>
+          </div>
+          <div className="FeaturesSection p-2">
+            <span><MdHeadset  size={25} /></span>
+            <h4 className="mt-3">Online Support</h4>
+            <p>24 hours a day, 7 days a week</p>
+          </div>
+          <div className="FeaturesSection p-2">
+            <span><LuCreditCard size={25} /></span>
+            <h4 className="mt-3">Flexible Payment</h4>
+            <p>Pay with multiple credit cards</p>
+          </div>
+          
+        </div>
       </Container>
     </>
   );
