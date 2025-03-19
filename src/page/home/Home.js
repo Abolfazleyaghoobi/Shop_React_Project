@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
-import NavBar from "../../components/components Home/nav/NavBar";
-import Header from "../../components/components Home/header/Header";
+import NavBar from "../../components/nav/NavBar";
+import Header from "../../components/header/Header";
 import CardCategori from "../../components/components Home/cardCategories/Categori";
 import "./Home.css";
 import { useEffect, useState } from "react";
@@ -16,7 +16,7 @@ import Stories from "../../components/components Home/stories/Stories";
 import { FaBox, FaDollarSign } from "react-icons/fa6";
 import { MdHeadset } from "react-icons/md";
 import { LuCreditCard } from "react-icons/lu";
-import Footer from "../../components/components Home/footer/Footer";
+import Footer from "../../components/footer/Footer";
 
 function Home() {
   let [categories, setCategories] = useState([]);
