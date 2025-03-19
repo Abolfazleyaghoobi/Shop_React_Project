@@ -1,6 +1,6 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import imageHeader from "../../assets/img/Picture11.png";
+import imageHeader from "../../../assets/img/Picture11.png";
 import "./Header.css";
 function Header() {
   return (

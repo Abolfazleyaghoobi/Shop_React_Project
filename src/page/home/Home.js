@@ -1,22 +1,22 @@
 import { Col, Container, Row } from "react-bootstrap";
-import NavBar from "../../components/nav/NavBar";
-import Header from "../../components/header/Header";
-import CardCategori from "../../components/cardCategories/Categori";
+import NavBar from "../../components/components Home/nav/NavBar";
+import Header from "../../components/components Home/header/Header";
+import CardCategori from "../../components/components Home/cardCategories/Categori";
 import "./Home.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import Bestseller from "../../components/cardBestseller/Bestseller";
-import Deals from "../../components/Deals/Deals";
-import ComentUser from "../../components/comentsInPageHome/cmt";
-import SwiperBTN from "../../components/swiperBTN/SwiperBTN";
-import Btn from "../../components/btn/Btn";
-import Stories from "../../components/stories/Stories";
+import Bestseller from "../../components/components Home/cardBestseller/Bestseller";
+import Deals from "../../components/components Home/Deals/Deals";
+import ComentUser from "../../components/components Home/comentsInPageHome/cmt";
+import SwiperBTN from "../../components/components Home/swiperBTN/SwiperBTN";
+import Btn from "../../components/components Home/btn/Btn";
+import Stories from "../../components/components Home/stories/Stories";
 import { FaBox, FaDollarSign } from "react-icons/fa6";
 import { MdHeadset } from "react-icons/md";
 import { LuCreditCard } from "react-icons/lu";
-import Footer from "../../components/footer/Footer";
+import Footer from "../../components/components Home/footer/Footer";
 
 function Home() {
   let [categories, setCategories] = useState([]);
@@ -100,17 +100,31 @@ function Home() {
             <h2>What our Customer say's?</h2>
             <Btn />
           </div>
-          <Row>
+
+          <Swiper
+            rtl={false}
+            loop={true}
+            className="d-flex flex-column-reverse "
+            spaceBetween={100}
+            breakpoints={{
+              1200: {
+                slidesPerView: 3,
+              },
+              992: {
+                slidesPerView: 2,
+              },
+            }}
+          >
             {comentsUsers.map((cmt) => (
-              <Col key={cmt.id}>
+              <SwiperSlide key={cmt.id}>
                 <ComentUser {...cmt} />
-              </Col>
+              </SwiperSlide>
             ))}
-          </Row>
+          </Swiper>
         </Container>
       </section>
-      {/* stories */}
       <Container>
+        {/* stories */}
         <section className="stories">
           <h1 className="text-center">Our Instagram Stories</h1>
           <Row>

@@ -2,7 +2,7 @@ import { Col, Row } from "react-bootstrap";
 import Timer from "../Timer/Timer";
 import "./Deals.css";
 // import image
-import image from "../../assets/img/picture12.png";
+import image from "../../../assets/img/picture12.png";
 
 function Deals() {
   return (

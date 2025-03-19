@@ -1,5 +1,5 @@
 import { Nav } from "react-bootstrap";
-import logo from "../../assets/img/logosite.png"
+import logo from "../../../assets/img/logosite.png"
 import "./NavBar.css"
 function NavBar() {
   return (
