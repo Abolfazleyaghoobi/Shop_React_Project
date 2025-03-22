@@ -1,0 +1,51 @@
+.con-login {
+  top: 81px;
+  left: 357px;
+}
+.login {
+  width: 800px;
+  border: 1px solid rgb(163, 163, 163);
+  overflow: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.logo-site {
+  top: 34px;
+  left: 23px;
+  width: 99px;
+}
+.con-form{
+    padding-inline:30px ;
+    padding-top: 100px !important;
+}
+.con-form p{
+   font-size: 15px;
+   color: #a3a3a3;
+}
+.con-form label{
+  font-size: 12px;
+   
+}
+.con-form input{
+   border: 1px solid black;
+   padding: 10px;
+   border-radius: 8px;
+   
+}
+.con-form input:focus{
+  box-shadow: 0 0 0 0 ;
+  border: 1px solid black;
+   
+}
+.checkBox label{
+  font-size: 15px;
+}
+.con-form a{
+  font-size: 12px;
+ color: black;
+}
+.backBTN{
+  top: 34px;
+  left: 12px;
+}

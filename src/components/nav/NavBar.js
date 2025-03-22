@@ -1,6 +1,7 @@
 import { Nav } from "react-bootstrap";
-import logo from "../../../assets/img/logosite.png"
+import logo from "../../assets/img/logosite.png"
 import "./NavBar.css"
+import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <Nav className=" pt-2">
@@ -139,7 +140,7 @@ function NavBar() {
           {/* <!--! this's icons and button Login --> */}
           <div className="col col-lg-2">
             <div className="icnLGIN d-flex align-items-center">
-              <button className="btn btn-dark">Login</button>
+              <Link to="/login" className="btn btn-dark">Login</Link>
               <span>
                 <i className="bi bi-bag fs-5 px-2 me-4"></i>
               </span>

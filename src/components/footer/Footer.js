@@ -1,5 +1,5 @@
 import { Col, Row } from "react-bootstrap";
-import image from "../../../assets/img/logoFooter.png";
+import image from "../../assets/img/logoFooter.png";
 import { FaPhoneVolume } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaMapMarkerAlt, FaCcVisa, FaGooglePay,FaFacebookF,FaInstagram } from "react-icons/fa";
