@@ -1,6 +1,16 @@
 .con-login {
   top: 81px;
-  left: 357px;
+  left: 16%;
+}
+@media screen and (min-width: 1200px) {
+  .con-login {
+    left: 19%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .con-login {
+    left: 25%;
+  }
 }
 .login {
   width: 800px;
@@ -15,37 +25,41 @@
   left: 23px;
   width: 99px;
 }
-.con-form{
-    padding-inline:30px ;
-    padding-top: 100px !important;
+.con-form {
+  padding-inline: 30px;
+  padding-top: 100px !important;
 }
-.con-form p{
-   font-size: 15px;
-   color: #a3a3a3;
+.con-form p {
+  font-size: 15px;
+  color: #a3a3a3;
 }
-.con-form label{
+.con-form label {
   font-size: 12px;
-   
+  color: wheat;
 }
-.con-form input{
-   border: 1px solid black;
-   padding: 10px;
-   border-radius: 8px;
-   
-}
-.con-form input:focus{
-  box-shadow: 0 0 0 0 ;
+.con-form input {
   border: 1px solid black;
-   
+  padding: 10px;
+  border-radius: 8px;
 }
-.checkBox label{
+.con-form input:focus {
+  box-shadow: 0 0 0 0;
+  border: 1px solid black;
+}
+.checkBox label {
   font-size: 15px;
 }
-.con-form a{
+.con-form a {
   font-size: 12px;
- color: black;
+  color: black;
 }
-.backBTN{
+.backBTN {
   top: 34px;
-  left: 12px;
+  left: 45px;
+  background: rgb(43, 43, 43) !important;
+  border:  rgb(118, 118, 118) !important;
+}
+.backBTN:hover {
+  background: rgb(87, 87, 87) !important;
+  border:  rgb(101, 101, 101) !important;
 }

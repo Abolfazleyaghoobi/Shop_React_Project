@@ -5,18 +5,21 @@ import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 import Particles from "../../Animation/Balatro/Particles";
 import { FaArrowLeft } from "react-icons/fa";
-
+import NavBar from  "../../nav/NavBar"
 
 function Login() {
+  const goBack=()=>{
+    window.history.back();
+  }
   return (
     <>
-   
+   <NavBar/>
       <div
         style={{
-          width: "100%",
-          height: "100vh",
+        
           position: "relative",
-          background: "black",
+            
+          
         }}
       >
         <Particles
@@ -76,7 +79,7 @@ function Login() {
             </Row>
           </div>
         </div>
-        <Button className="position-absolute backBTN"><FaArrowLeft color="red"  size={34}/></Button>
+        <Button onClick={goBack} className="position-absolute backBTN"><FaArrowLeft color="#e6e6e6"  size={34}/></Button>
       </div>
       
     </>

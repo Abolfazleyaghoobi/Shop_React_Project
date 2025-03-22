@@ -95,6 +95,11 @@ const Particles = ({
 
   useEffect(() => {
     const container = containerRef.current;
+    console.log('container: ', container);
+container.style.background="black"
+
+
+
     if (!container) return;
 
     const renderer = new Renderer({ depth: false, alpha: true });
@@ -106,7 +111,11 @@ const Particles = ({
     camera.position.set(0, 0, cameraDistance);
 
     const resize = () => {
-      renderer.setSize(1500, 700);
+      const width = window.innerWidth;
+      console.log('width: ', width);
+      const height = window.innerHeight;
+      console.log('height: ', height);
+      renderer.setSize(width, height);
       camera.perspective({ aspect: gl.canvas.width / gl.canvas.height });
     };
     window.addEventListener("resize", resize, false);
