@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Particles from "../../Animation/Balatro/Particles";
 import { FaArrowLeft } from "react-icons/fa";
 import NavBar from  "../../nav/NavBar"
+import Footer from  "../../footer/Footer"
 
 function Login() {
   const goBack=()=>{
@@ -73,6 +74,7 @@ function Login() {
                       <Link className="text-light">Forgot Password?</Link>
                     </div>
                     <Button className="border-0 w-100 mt-4 bg-dark mb-3 ">Login</Button>
+                    <p className="createAccount">Do you have not account?<Link  to="/signup">create</Link></p>
                   </Form>
                 </div>
               </Col>
@@ -81,6 +83,11 @@ function Login() {
         </div>
         <Button onClick={goBack} className="position-absolute backBTN"><FaArrowLeft color="#e6e6e6"  size={34}/></Button>
       </div>
+      <section className="footer-section pt-5">
+        <Container>
+          <Footer />
+        </Container>
+      </section>
       
     </>
   );
