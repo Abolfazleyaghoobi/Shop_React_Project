@@ -71,7 +71,7 @@ function Login() {
                     />
                     <div className="d-flex justify-content-between mt-3 align-items-center">
                       <Form.Check  className="checkBox text-light" label="Remember me" />
-                      <Link className="text-light">Forgot Password?</Link>
+                      <Link to="/Forgotpassword" className="text-light">Forgot Password?</Link>
                     </div>
                     <Button className="border-0 w-100 mt-4 bg-dark mb-3 ">Login</Button>
                     <p className="createAccount">Do you have not account?<Link  to="/signup">create</Link></p>
@@ -81,7 +81,7 @@ function Login() {
             </Row>
           </div>
         </div>
-        <Button onClick={goBack} className="position-absolute backBTN"><FaArrowLeft color="#e6e6e6"  size={34}/></Button>
+     
       </div>
       <section className="footer-section pt-5">
         <Container>

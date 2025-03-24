@@ -2,8 +2,6 @@ import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import Particles from "../../Animation/Balatro/Particles";
 import logoSite from "../../../assets/img/Logo + Text.png";
 import "./Signup.css"
-import { FaArrowLeft } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import NavBar from "../../nav/NavBar";
 import Footer from "../../footer/Footer";
 
@@ -86,7 +84,7 @@ function Signup() {
             </Row>
           </div>
         </div>
-        <Button className="position-absolute backBTN"><Link to="/"><FaArrowLeft color="#e6e6e6"  size={34}/></Link></Button>
+       
       </div>
       <section className="footer-section pt-5">
         <Container>
