@@ -2,8 +2,11 @@ import { Button, Col, Row } from "react-bootstrap";
 
 import "./ForgotPasswor.css";
 import Form from "react-bootstrap/Form";
+import { GetStatusBTNForgotPassword } from "./ForgotPage";
 
+import { useContext } from "react";
 function ForgotPassword() {
+  const {setShowEnterCode}=useContext(GetStatusBTNForgotPassword)
   return (
     <>
       <div className="cconForgotPass d-flex justify-content-center align-items-center">
@@ -35,7 +38,7 @@ function ForgotPassword() {
 
                   <div className="d-flex justify-content-between mt-3 align-items-center"></div>
                   <Button
-                    type="submit"
+                  onClick={()=>setShowEnterCode(true)}
                     className="border-0 w-100 bg-dark mb-3 "
                   >
                     Send OTP

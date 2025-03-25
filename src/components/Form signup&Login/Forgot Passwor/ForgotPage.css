@@ -2,6 +2,9 @@
     top: 81px;
     left: 16%;
     position: absolute;
+    overflow: hidden;
+    width: 800px;
+    height: 582.94px;
   }
   @media screen and (min-width: 1200px) {
     .conForgotPass {
@@ -12,4 +15,11 @@
     .conForgotPass{
       left: 25%;
     }
+  }
+  .frPassword{
+    transition: all .3s linear !important;
+  }
+  .EnterCode{
+    left: 803px ;
+    transition: all .3s linear;
   }

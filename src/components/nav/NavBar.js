@@ -22,9 +22,9 @@ function NavBar() {
           <div className="col ">
             <ul className="d-flex  navList justify-content-center">
               <li className=" p-1">
-                <a href="" className="">
+                <Link to="/">
                   Home
-                </a>
+                </Link>
               </li>
               {/* <!--  style inline icon and Shop subMenu --> */}
 
