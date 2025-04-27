@@ -7,11 +7,16 @@ import Particles from "../../Animation/Balatro/Particles";
 import { FaArrowLeft } from "react-icons/fa";
 import NavBar from  "../../nav/NavBar"
 import Footer from  "../../footer/Footer"
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function Login() {
-  const goBack=()=>{
-    window.history.back();
-  }
+  let [useInfo,setUserInfo]=useState([])
+  useEffect(()=>{
+    axios.get("http://localhost:5000/usetData")
+    .then(e=>setUserInfo(e.data))
+  },[])
+
   return (
     <>
    <NavBar/>

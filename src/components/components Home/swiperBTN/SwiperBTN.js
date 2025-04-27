@@ -5,6 +5,7 @@ import { useSwiper } from "swiper/react";
 function SwiperBTN() {
     const swiper = useSwiper();
   const slideBTN = (e) => {
+    e.currentTarget.style.background = "#000";
     const icon = e.currentTarget.querySelector("svg");
     if (icon) {
       icon.style.color = "#fff";

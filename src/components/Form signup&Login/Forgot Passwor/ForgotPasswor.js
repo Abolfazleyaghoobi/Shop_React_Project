@@ -4,9 +4,55 @@ import "./ForgotPasswor.css";
 import Form from "react-bootstrap/Form";
 import { GetStatusBTNForgotPassword } from "./ForgotPage";
 
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
+import axios from "axios";
 function ForgotPassword() {
-  const {setShowEnterCode}=useContext(GetStatusBTNForgotPassword)
+  let [Email, setEmail] = useState("");
+  let [number, setNumver] = useState(0);
+  let [useInfo, setUserInfo] = useState([]);
+
+  // const { setGetNumber } = useContext(GetStatusBTNForgotPassword);
+
+  const { setShowEnterCode, setGetNumber, setGetEmail, setGetShowPopup } =
+    useContext(GetStatusBTNForgotPassword);
+  const regexEmailCode = /\w{3,}@gmail.com/;
+
+  const booleanRegex = regexEmailCode.test(Email);
+
+
+  let isEmail = useInfo.map((e) => {
+    let email = e.email;
+    if (email===Email) {
+      return true
+    }
+  });
+  if (isEmail==undefined) {
+    alert(44)
+  }
+  console.log('isEmail: ', isEmail);
+  const sendBoolean = () => {
+    if (isEmail) {
+      if (booleanRegex) {
+        setShowEnterCode(true);
+        setGetEmail(Email);
+        setGetShowPopup("show7Popup");
+      } else {
+        setShowEnterCode("emailIsNotValid");
+        setNumver(++number);
+        setGetNumber(number);
+      }
+    }else if (isEmail == "undefined") {
+      alert(88)
+    }
+    
+
+  };
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/usetData")
+      .then((e) => setUserInfo(e.data));
+  }, []);
   return (
     <>
       <div className="cconForgotPass d-flex justify-content-center align-items-center">
@@ -34,11 +80,12 @@ function ForgotPassword() {
                     type="email"
                     id="inputPassword5"
                     aria-describedby="passwordHelpBlock"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
 
                   <div className="d-flex justify-content-between mt-3 align-items-center"></div>
                   <Button
-                  onClick={()=>setShowEnterCode(true)}
+                    onClick={sendBoolean}
                     className="border-0 w-100 bg-dark mb-3 "
                   >
                     Send OTP

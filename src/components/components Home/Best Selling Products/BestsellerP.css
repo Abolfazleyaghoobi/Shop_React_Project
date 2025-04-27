@@ -1,0 +1,37 @@
+.Options {
+  width: 18rem;
+  height: 18rem;
+  background: rgba(188, 188, 188, 0.68);
+  position: absolute;
+  top: 0px;
+  display: none;
+}
+.Options > div {
+  text-align: right;
+  padding: 4px 15px;
+}
+.Options > div > span {
+  background: rgb(255, 255, 255);
+  display: inline-block;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn-Add {
+  border-radius: 9px;
+  padding: 15px;
+  width: 172px;
+  top: 217px;
+  left: 51px;
+  color: rgb(15, 15, 15);
+  background: rgb(236, 236, 236);
+  transition: all 0.1s ease-in-out;
+}
+.btn-Add:hover {
+  color: rgb(225, 225, 225);
+  background: rgb(54, 54, 54);
+}
+.B-card {
+  border: 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

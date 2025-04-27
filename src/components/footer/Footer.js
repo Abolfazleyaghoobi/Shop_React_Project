@@ -8,6 +8,7 @@ import { SiMastercard } from "react-icons/si";
 import { IoLogoPaypal } from "react-icons/io5";
 
 import "./Footer.css";
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
@@ -39,7 +40,7 @@ function Footer() {
           <div className="information">
             <p>Information</p>
             <a href="#">My Account</a>
-            <a href="#">Login</a>
+            <Link to="/login">Login</Link>
             <a href="#">My Cart </a>
             <a href="#">My Wishlist</a>
             <a href="#">Checkout</a>

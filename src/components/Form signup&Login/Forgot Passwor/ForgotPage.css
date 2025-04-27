@@ -23,3 +23,22 @@
     left: 803px ;
     transition: all .3s linear;
   }
+  .swal2-popup{
+    height: 150px;
+    width: 260px;
+    right: 23px;
+    top: 23px;
+  }
+  .swal2-icon{
+    font-size: 10px;
+  }
+  .swal2-title{
+    font-size: 18px;
+  }
+  .w-popup-code{
+    width: 290px !important;
+    height: 55px !important;
+    background: linear-gradient(135deg, rgba(18,244,231,1) 30%, rgba(36,80,201,1) 88%) !important;
+    color: rgb(0, 0, 0);
+   padding: 0 !important;
+  }

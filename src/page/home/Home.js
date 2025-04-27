@@ -1,43 +1,51 @@
 import { Col, Container, Row } from "react-bootstrap";
 import NavBar from "../../components/nav/NavBar";
 import Header from "../../components/header/Header";
-import CardCategori from "../../components/components Home/cardCategories/Categori";
+// && file css
 import "./Home.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import Bestseller from "../../components/components Home/cardBestseller/Bestseller";
+// && components
 import Deals from "../../components/components Home/Deals/Deals";
 import ComentUser from "../../components/components Home/comentsInPageHome/cmt";
-import SwiperBTN from "../../components/components Home/swiperBTN/SwiperBTN";
 import Btn from "../../components/components Home/btn/Btn";
 import Stories from "../../components/components Home/stories/Stories";
+import BestsellerP from "../../components/components Home/Best Selling Products/BestsellerP";
+import CardCategori from "../../components/components Home/cardCategories/Categori";
+// && react icon
 import { FaBox, FaDollarSign } from "react-icons/fa6";
 import { MdHeadset } from "react-icons/md";
 import { LuCreditCard } from "react-icons/lu";
+// * footer
 import Footer from "../../components/footer/Footer";
 
+import LoaderProducts from "../../components/Animation/loader Animation/LoaderProducts";
+
 function Home() {
-  let [categories, setCategories] = useState([]);
-  let [bestseller, setBestseller] = useState([]);
   let [comentsUsers, setComentsUsers] = useState([]);
+  const [BProducts, setBProducts] = useState([]);
+  console.log("BProducts: ", BProducts);
+  let [loading, setLoading] = useState(false);
   let [stories, setStories] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:2000/categories")
-      .then((e) => setCategories(e.data));
-    axios
-      .get("http://localhost:2000/Bestseller")
-      .then((e) => setBestseller(e.data));
-    axios
-      .get("http://localhost:2000/coments")
+      .get("http://localhost:5000/coments")
       .then((e) => setComentsUsers(e.data));
     axios
-      .get("http://localhost:2000/photoStories")
+      .get("http://localhost:5000/photoStories")
       .then((e) => setStories(e.data));
+    // * req api Best Selling Products
+
+    axios
+      .get("http://localhost:8000/products?limit=8")
+      .then((res) => setBProducts(res.data.products));
+    // !_________________________________________________
+    if (BProducts) {
+      setLoading(false);
+    }
   }, []);
-  //* prev & next style
 
   return (
     <>
@@ -46,48 +54,25 @@ function Home() {
       <Container>
         {/* cardC=>cardCategori */}
 
-        <section className="  cardC">
-          <Swiper
-            rtl={false}
-            loop={true}
-            className="d-flex flex-column-reverse "
-            spaceBetween={40}
-            breakpoints={{
-              1400: {
-                slidesPerView: 5,
-              },
-              1200: {
-                slidesPerView: 4,
-              },
-              992: {
-                slidesPerView: 3,
-              },
-            }}
-          >
-            <div className="d-flex justify-content-between align-items-center">
-              <h2>Shop by Categories</h2>
-              <SwiperBTN />
-            </div>
-            {categories.map((categori) => (
-              <SwiperSlide key={categori.id}>
-                <CardCategori {...categori} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+        <section className=" cardC">
+          <CardCategori />
         </section>
-        {/* this part is bestseller */}
-        <section className="mt-5">
-          <div className="text-center">
-            <h2>Our Bestseller</h2>
-          </div>
-          <Row>
-            {bestseller.map((best) => (
-              <Col key={best.id}>
-                <Bestseller {...best} />
-              </Col>
-            ))}
+        {/* bestseller product's */}
+        <section className="sec-bestseller">
+          <h2 className="text-center">Our Bestseller</h2>
+          <Row className="position-relative">
+            {BProducts && BProducts.length > 0 ? (
+              BProducts.map((item) => (
+                <Col className="gy-4" key={item._id}>
+                  <BestsellerP {...item} />
+                </Col>
+              ))
+            ) : (
+              <LoaderProducts />
+            )}
           </Row>
         </section>
+
         {/* Deals */}
         <section className="deal">
           <Deals />

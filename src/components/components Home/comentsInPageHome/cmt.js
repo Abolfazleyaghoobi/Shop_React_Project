@@ -6,6 +6,7 @@ function ComentUser({name,job,coment,image}) {
       
           <div className="card-coment overflow-hidden p-3">
             <div className="iconsStart">
+              {/* icon star's */}
               <i className="bi bi-star-fill"></i>
               <i className="bi bi-star-fill"></i>
               <i className="bi bi-star-fill"></i>

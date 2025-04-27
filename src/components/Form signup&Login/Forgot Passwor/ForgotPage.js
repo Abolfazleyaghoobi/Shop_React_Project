@@ -6,23 +6,77 @@ import Particles from "../../Animation/Balatro/Particles";
 import "./ForgotPage.css";
 import EnterCode from "./EnterCode";
 import { createContext, useEffect, useRef, useState } from "react";
+import Swal from "sweetalert2";
+import useRandomNumber from "../../../Hooks/useGenerateRandomNumber";
+import axios from "axios";
+
 export const GetStatusBTNForgotPassword = createContext();
 function ForgotPassPage() {
   const EnterC = useRef(null);
   const frPass = useRef(null);
   let [showEnterCode, setShowEnterCode] = useState(false);
+  let [getNumber, setGetNumber] = useState(0);
+  let [getEmail, setGetEmail] = useState("");
+  let [getShowPopup, setGetShowPopup] = useState("");
+  const randomNumber = useRandomNumber();
+  let generateNumber = randomNumber;
+  let verifyCode = generateNumber();
+
   useEffect(() => {
-    if (showEnterCode) {
-      EnterC.current.style.left = "0px";
-      frPass.current.style.left = "-830px";
-    }else if(!showEnterCode){
-      EnterC.current.style.left = "803px";
-      frPass.current.style.left = "0px";
+    if (showEnterCode != "emailIsNotValid") {
+      if (showEnterCode) {
+        EnterC.current.style.left = "0px";
+        frPass.current.style.left = "-830px";
+
+        console.log("getShowPopup: ", getShowPopup);
+        if (getShowPopup === "show7Popup") {
+          const Toast = Swal.mixin({
+            toast: true,
+            position: "top-end",
+            showConfirmButton: false,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.onmouseenter = Swal.stopTimer;
+              toast.onmouseleave = Swal.resumeTimer;
+            },
+          });
+          Toast.fire({
+            title: `This is the code to recover your password:${verifyCode}`,
+            customClass: {
+              popup: "w-popup-code",
+            },
+          });
+        }
+      } else {
+        EnterC.current.style.left = "803px";
+        frPass.current.style.left = "0px";
+        if (getShowPopup === "hide") {
+          Swal.close();
+        }
+      }
+    } else {
+      Swal.fire({
+        position: "top-end",
+        icon: "warning",
+        title: "The email you entered is invalid",
+        showConfirmButton: false,
+        timer: 2000,
+        heightAuto: false,
+      });
     }
-  }, [showEnterCode]);
+  }, [showEnterCode, getNumber, getShowPopup]);
+ 
+
   return (
     <GetStatusBTNForgotPassword.Provider
-      value={{ showEnterCode, setShowEnterCode}}
+      value={{
+        setShowEnterCode,
+        setGetNumber,
+        getEmail,
+        setGetEmail,
+        setGetShowPopup,
+        verifyCode,
+      }}
     >
       <NavBar />
       <div
@@ -45,6 +99,7 @@ function ForgotPassPage() {
             <div ref={frPass} className="position-absolute  frPassword">
               <ForgotPassword />
             </div>
+
             <div ref={EnterC} className="position-absolute EnterCode">
               <EnterCode />
             </div>
