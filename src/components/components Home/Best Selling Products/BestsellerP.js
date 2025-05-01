@@ -1,23 +1,25 @@
-import {  useRef, useState } from "react";
+import { useRef, useState } from "react";
 import "./BestsellerP.css";
 import Card from "react-bootstrap/Card";
 import notFoundImg from "../../../assets/img/notFound.png";
 // && react-icons
 import { FaStar, FaRegStar } from "react-icons/fa";
 import { GoEye } from "react-icons/go";
-import { Button } from "bootstrap";
 function BestsellerP({ name = "Product Name", brand, images, price }) {
   const [isClicked, setIsClicked] = useState(true);
 
   const option = useRef(null);
-
 
   return (
     <>
       <Card
         className="B-card"
         style={{ width: "18rem" }}
-        onMouseEnter={() => (option.current.style.display = "block")}
+        onMouseEnter={() => {
+          if (navigator.onLine) {
+            option.current.style.display = "block";
+          }
+        }}
         onMouseLeave={() => (option.current.style.display = "none")}
       >
         <div className="position-relative">
@@ -34,7 +36,7 @@ function BestsellerP({ name = "Product Name", brand, images, price }) {
                 <GoEye size={25} />
               </span>
             </div>
-          <button className="btn-Add position-absolute">Add to Cart</button>
+            <button className="btn-Add position-absolute">Add to Cart</button>
           </div>
         </div>
         <Card.Body className="border border-top-1">

@@ -1,0 +1,52 @@
+.accordion-item {
+  margin-bottom: 13px;
+  border-radius: 10px;
+  border: none !important;
+}
+.accordion-button {
+  background: rgb(255, 255, 255) !important;
+  color: rgb(5, 5, 5) !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+/* ~ -------- */
+.checkbox-container {
+  margin-bottom: 10px;
+}
+.checkbox-container input[type="checkbox"]:checked + label {
+  color: #ff6347; /* تغییر رنگ متن به قرمز */
+  font-weight: bold; /* پر رنگ کردن متن */
+}
+.checkbox-container label {
+  margin-left: 5px;
+  font-size: 16px;
+}
+.checkbox-container input[type="checkbox"] {
+  accent-color: #4b4b4b; /* تغییر رنگ تیک باکس */
+  width: 20px;
+  height: 20px;
+}
+/* ~ -------- */
+.submenu-container {
+border-radius:10px ;
+  background: rgba(237, 237, 237, 0.438);
+  margin-left: 10px;
+  height: 0;
+  overflow: hidden;
+  
+}
+.iconSubMen1{
+  
+  width: 24px;
+  height: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+.fontSizeSub1{
+  font-size: 35px ;
+}
+
+
